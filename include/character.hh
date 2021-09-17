@@ -4,7 +4,10 @@
 #include <conio.h>
 #include <stdlib.h>
 
-class Character{
+using namespace std;
+
+class Character
+{
 	private:
 		string name;
 		int level;
@@ -14,13 +17,15 @@ class Character{
 }; 
 		
 
-Character::Character(string _name, int _level){
+Character::Character(string _name, int _level)
+{
 	name = _name;
 	level = _level;
 }
 
 
-void Character::printCharacter(){
+void Character::printCharacter()
+{
 	cout<<"Name: "<<name<<endl;
 	cout<<"Level: "<<level<<endl;
 }

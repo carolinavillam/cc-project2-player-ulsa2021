@@ -5,7 +5,10 @@
 #include <stdlib.h>
 #include "character.hh"
 
-class Player : public Character {
+using namespace std;
+
+class Player : public Character 
+{
 	private:
 		string gameplay;
 		float strength;
@@ -14,12 +17,14 @@ class Player : public Character {
 		void printPlayer();	
 };
 
-Player::Player(string _name,int _level, string _gameplay, float _strength) : Character(_name, _level){
+Player::Player(string _name,int _level, string _gameplay, float _strength) : Character(_name, _level)
+{
 	gameplay = _gameplay;
 	strength = _strength;
 }
 
-void Player::printPlayer(){
+void Player::printPlayer()
+{
 	printCharacter();
 	cout<<"Gameplay "<<gameplay<<endl;
 	cout<<"Strength "<<strength<<endl;
